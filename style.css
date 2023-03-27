@@ -1,27 +1,23 @@
-* {
-	box-sizing: border-box;
+.container {
+  scroll-snap-type: y mandatory; /* enable scroll snap */
+  overflow-y: scroll; /* enable scrolling */
+  height: 812px; /* set container height */
+  width: 375px;
+  background-color: #f5f5f5;
 }
-html {
-	font-family: sans-serif;
-	scroll-snap-type: mandatory;
-	scroll-snap-points-y: repeat(100vh);
-	scroll-snap-type: y mandatory;
+
+.panel {
+  scroll-snap-align: start; /* snap to the start of each panel */
+  height: 812px; /* set panel height */
+  width: 375px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
-section {
-	border-bottom: 1px solid white;
-	padding: 1rem;
-	height: 100vh;
-	scroll-snap-align: start;
-	text-align: center;
-	position: relative;
-}
-h1	{
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	text-align: center;
-	color: black;
-	width: 100%;
-	left: 0;
-	font-size: calc(1rem + 3vw);
+
+.panel img {
+  width: 333px;
+  height: 632px;
+  border-radius: 24px;
 }
